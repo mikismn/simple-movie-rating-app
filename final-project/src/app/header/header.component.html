@@ -1,0 +1,13 @@
+<div class="h-container">
+  <div class="logo" (click)="goToHome()">mikyinyourdreams</div>
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-box"
+      placeholder="Search"
+      [(ngModel)]="searchQuery"
+    />
+    <button (click)="search()">search</button>
+  </div>
+  <div class="logout" (click)="logout()">Logout</div>
+</div>

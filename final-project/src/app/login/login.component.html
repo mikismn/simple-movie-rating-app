@@ -1,0 +1,65 @@
+<div class="l-container">
+  <img class="movie" src="assets/images/movie.png" alt="" />
+  <div class="meow-container">
+    <div class="logo">mikyinyourdreams</div>
+    <div class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+      voluptatibus doloribus fugit corporis, molestiae animi quae molestias
+      similique nam? Perspiciatis blanditiis, amet ullam hic quod voluptatibus
+      eligendi corporis consequatur. Quisquam.
+    </div>
+  </div>
+  <div class="shit-code">
+    <div class="l-form">
+      <!-- Login form -->
+      <div class="form-group">
+        <label for="user">Username</label>
+        <input
+          type="text"
+          name="user"
+          class="form-control"
+          [(ngModel)]="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          class="form-control"
+          [(ngModel)]="password"
+        />
+      </div>
+      <div class="button-container">
+        <div class="error">{{ errorMsg }}</div>
+        <button class="btn btn-dark" (click)="login()">Login</button>
+      </div>
+      <!-- Sign-up form -->
+    </div>
+
+    <div class="l-form">
+      <div class="form-group">
+        <label for="newUser">New Username</label>
+        <input
+          type="text"
+          name="newUser"
+          class="form-control"
+          [(ngModel)]="newUsername"
+        />
+      </div>
+      <div class="form-group">
+        <label for="newPass">New Password</label>
+        <input
+          type="password"
+          name="newPass"
+          class="form-control"
+          [(ngModel)]="newPassword"
+        />
+      </div>
+      <div class="button-container">
+        <div class="error">{{ signupErrorMsg }}</div>
+        <button class="btn btn-dark" (click)="signup()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
